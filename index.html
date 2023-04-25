@@ -7,101 +7,140 @@
     <title>Pete Thinkful</title>
     <link
       rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- Header section -->
     <header>
-      <h1>Pete Thinkful | Artist </h1>
+      <h1>Pete Thinkful | Artist</h1> 
       <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <ul class="inside-nav">
+        <li><a href="#about">About</a></li> 
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-    </header>  
+    </header>
 
     <main>
       <div>
-        <!-- TODO: Add About section here -->
-        <article>
-        <h2>About</h2>
-        <section>
-          <h3>Hi! I'm Pete Thinkful</h3>
-          <div>
-            <img class="image-circle" src="images/pete-thinkful.png" 
-              alt="Pete Thinkful"
-              />
-          </div>
-        <p> I'm an artist living in Denver, Colorado.</p>
-        <p>As an artist, I'm interested in: </p>
-        <ul>
-          <li>Producing</li>
-          <li>Creating street graffiti art</li>
-          <li>Connecting with like-minded artists</li>
-        </ul>
-        <p>Please feel free to take a look at my website and feel free to <a href="#contact">contact me. </a>
-        </p>
-        </section>
+        <!-- About section -->
+        <article id="about">
+          <h2>About</h2>
+          <section>
+            <!-- need to add a div here for this whole section because I need to have
+            the img to the left and the text to the right -->
+            <div class="middle">
+           <!-- moved the h3 that was here to above the p tag to have a  
+          better display with flexbox-->
+            <div>
+              <img
+                class="image-circle"
+                src="images/pete-thinkful.png"
+                alt="Pete Thinkful"
+    />
+  </div>
+  <!-- added a div class here to the h3 and p tags aligned to the left like the Thinkful image on lesson project-->
+  <div class="middle-text">
+  <h3>Hi! I'm Pete Thinkful</h3>
+            <p>I'm an artist living in Denver, Colorado.</p>
+            <p>As an artist, I'm interested in:</p>
+            <ul class="list">
+              <li>Producing abstract art</li>
+              <li>Creating street graffiti art</li>
+              <li>Connecting with like-minded artists</li>
+            </ul>
+            <p>
+              Please feel free to take a look at my website and feel free to 
+              <a href="#contact">contact me</a>.
+            </p>
+        </div>
+        </div>
+          </section>
 
           <section>
-        <h3>Pete's Background</h3>
-        <p>
-          After graduating college, I became an art teacher and worked with beginners and professionals. I love art and my works have been featured in major art galleries across the globe. 
-        </p>
-
-        <p>
-          If you're looking to hire an artist or if you're an artist looking for a collaborator for your next project, please reach out! I'm so excited to work with other artists to create new art.
-        </p>
-            </section>
+            <h3>Pete's Background</h3>
+            <p>
+              After graduating college, I became an art teacher and worked with
+              beginners and professionals. I love art and my works have been
+              featured in major art galleries across the globe.
+            </p>
+            <p>
+              If you're looking to hire an artist or if you're an artist looking
+              for a collaborator for your next project, please reach out! I'm so
+              excited to work with other artists to create new art.
+            </p>
+          </section>
         </article>
 
         <hr />
 
-        <!-- TODO: Add Portfolio section here -->
-        <article>
-        <h2>Portfolio</h2>
-          <section>
+        <!-- Portfolio section -->
+        <article id="portfolio">
+          <h2>Portfolio</h2>
+          
+            <div class="img-section">
+            <!-- adding div to have this h3, img, & p tag together in boxes in order
+            to have them column and add spaces in between these three images down here this section-->
+            <div>
             <h3>Abstract Red</h3>
-            <div>
-            <img src="images/abstract-red.png" alt="abstract red" />
-            </div>
-            <p>Vaporwave wayfarers heirloom neutra distrupt. Activated charcoal waistcoat scenester hell of.</p>
-          </section>
-
-          <section>
+      
+              <img src="images/abstract-red.png" alt="Abstract Red" />
+              
+            <p>
+              Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
+              waistcoat scenester hell of.
+            </p>
+          </div>
           
+            <div>
             <h3>Spiral Zany</h3>
-            <div>
-            <img src="images/spiral-zany.png" alt="spiral Zany" />
+        
+              <img src="images/spiral-zany.png" alt="Spiral Zany" />
+            
+            <p>
+              Sriracha portland taxidermy cronut messenger bag, vegan
+              distillery. Vaporware kickstarter air plant mumblecore food truck.
+            </p>
             </div>
-            <p>Sriracha portland taxidermy cronut messenger bag, vegan distillery. Vaporwave kickstarter air plant mumblecore food truck.</p>
-          </section>
-          
-          <section>
+
+            <div>
             <h3>Melted Rainbow</h3>
-            <div>
-            <img src="images/melted-rainbow.png" alt="melted rainbow" />
+           
+              <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
+            
+            <p>
+              Edison bulb single-origin coffee snackwave, actually ennui
+              locavore shabby chic forage.
+            </p>
             </div>
-            <p>Edison bulb single-origin coffee snackwave, actually ennui locavore shabby chic forage.</p>
-          </section>
+            </div>
+           
+
         </article>
 
         <hr />
 
-         <!-- TODO: Add Contact section here -->
-        <article>
-<h2>Contact</h2>
-        <p>I'd love to hear from you! Please feel free to contact or follow me:</p>
-
-        <ul>
-
-          <li><a href="">LinkedIn</a></li>
-          <li><a href="">Instagram</a> </li>
-          <li><a href="">Pintrest</a>
+        <!-- Contact section -->
+        <article id="contact">
+          <h2>Contact</h2>
+          <p>
+            I'd love to hear from you! Please feel free to contact or follow me:
+          </p>
+          <ol>
+            <li>
+              <a href="">LinkedIn</a>
             </li>
-          
-        </ul>
-      </article>
+            <li>
+              <a href="">Instagram</a>
+            </li>
+            <li>
+              <a href="">Pinterest</a>
+            </li>
+          </ol>
+        </article>
       </div>
     </main>
 
